@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="patientreg.css" />
+  </head>
+  <style></style>
+  <body>
+    <h1>Patient resgistration form</h1>
+    <form class="cf">
+      <div class="half left cf">
+        <input type="text" id="input-name" placeholder="Name" />
+        <input type="email" id="input-email" placeholder="Email address" />
+        
+        <div class="main">
+         
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="inlineCheckbox1">Male</label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox1"
+              value="option1"
+              name="gender"
+            />
+           
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="inlineCheckbox2">Female</label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+              name="gender"
+            />
+           
+          </div>
+          
+          
+          </div>
+          <input type="tel" id="input-subject" placeholder="Mobile number " />
+          <input type="text" id="input-subject" placeholder="problem" />
+        </div>
+      </div>
+      <div class="half right cf">
+        <textarea
+          name="message"
+          type="text"
+          id="input-message"
+          placeholder="Message"
+        ></textarea>
+      </div>
+      <a href="index.php"><button id="input-submit"  >submit</button></a>
+      <!-- <input type="submit" value="Submit" id="input-submit" /> -->
+      
+    </form>
+  </body>
+</html>

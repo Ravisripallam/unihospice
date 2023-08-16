@@ -1,0 +1,164 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+*, 
+*:before, 
+*:after {
+  box-sizing: border-box; 
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+  background: url("img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffffdf;
+  text-shadow: 1px 1px 0 rgba(white, 1);
+}
+
+form {
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto;
+  border: 2px solid rgba(255, 255, 255, 0.411);
+  border-radius: 50px;
+  padding: 31px 71px 51px 9px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  
+  
+}
+  input, textarea {
+    border: 0;
+    outline: none;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 200%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(black, 0.1);
+    resize: none;
+    display: block;
+   position: relative;
+   right: 49px;
+    background-color: #e6e6e681;
+    border-radius: 28px;
+    border:2px solid #aaa;
+    
+
+    &:focus {
+      box-shadow: 0 0px 2px rgba(#1b927e, 1) !important;
+    }
+  }
+::-webkit-input-placeholder{
+  color: black;
+}
+  .main{
+    display: flex;
+    flex-direction: row;
+    
+    cursor: pointer;
+  }
+  .form-check-label{
+     position: relative;
+     margin: 12px;
+     display: flex;
+     flex-direction: column;
+  }
+  .form-check .form-check-inline{
+    display: flex;
+    flex-direction: row;
+  }
+  .form-check-input{
+    position: relative;
+    left: 1.4px;
+    top: -28px;
+    margin: 2px;
+  }
+  #input-submit {
+    color: white; 
+    background: #1b927e;
+    cursor: pointer;
+    width: 12%;
+    padding: 13px 23px;
+    margin: 2px 2px;
+    display: block;
+    position: absolute;
+    top: 37.5rem;
+    left: 42rem;
+    border-radius:28px ;
+    &:hover {
+      box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6); 
+    }
+  }
+  button{
+    border-radius:28px ;
+  }
+  
+  textarea {
+    height: 126px;
+  }
+
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+  
+  &.right {
+    width: 50%;
+  }
+
+  &.left {
+    margin-right: 2%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%; 
+    float: none;
+    margin-bottom: 0; 
+  }
+  
+  #input-submit {
+    color: white; 
+    background: #1b927e;
+    cursor: pointer;
+    width: 12%;
+    padding: 13px 23px;
+    margin: 2px 2px;
+    display: block;
+    position: absolute;
+    top: 36.5rem;
+    left: 13rem;
+    &:hover {
+      box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6); 
+    }
+  }
+}
+
+
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
